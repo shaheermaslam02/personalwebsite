@@ -1,0 +1,169 @@
+body {
+    margin: 0px;
+}
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #b781e4;
+}
+.brand {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.left-side {
+    display: flex;
+    margin-left: 10px;
+}
+.nav-wrapper > .left-side > div{
+    display: flex;
+    margin-right: 45px;
+
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.nav-link-wrapper {
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s
+}
+
+.nav-link-wrapper a{
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover{
+    color: black;
+}
+
+.background-video {
+    text-align: center;
+    width: 100%;
+    
+}
+.background-video div {
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    bottom: 45%;
+    right: 70%;
+    color: #b781e4;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.background-video .summary-text {
+    position: absolute;
+    top: 70%;
+    left: 21.5%;
+    bottom: 45%;
+    right: 70%;
+    color: #b781e4;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.background-video:hover video{
+    transition: 1s ease;
+    filter: brightness(10%);
+}
+
+.background-video:hover div{
+    width: 580px;
+    padding: 8px 15px; 
+    visibility: visible;
+    opacity: 0.7; 
+    filter: blur(0px);
+   }
+
+.background-video:hover .summary-text{
+    width: 700px;
+    padding: 8px 15px; 
+    visibility: visible;
+    opacity: 0.7; 
+    filter: blur(0px);
+   }
+.about-header {
+    margin-top: -4px;
+    padding: 20px;
+    height: 100px;
+    background-color: #43464b;
+}
+
+.about-header div{
+    padding: 20px;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle a{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle a{
+    color: #b781e4;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}

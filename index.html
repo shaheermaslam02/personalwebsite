@@ -1,1 +1,100 @@
-Hello world
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a website about Shaheer Aslam">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper">
+                        <a href = "index.html">Home</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href = "about.html">About</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href = "academics.html">Academics</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href = "hobbies.html">Interests</a>
+                    </div>
+                </div>
+
+                <div class="right-side"> 
+                    <div class="brand">
+                        <div><b>Shaheer Aslam</b></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-wrapper">
+                    <div class="background-video">
+                        
+                        <video width = 100% muted autoplay loop>
+                            <source src = "SkateVideo.mov">
+                        </video>
+                        <div>Prospective Computer Scientist</div>
+                        <div class="summary-text">
+                            My name is Shaheer Aslam: a guitarist, skateboarder, and computer scientist who looks for the balance in life.
+                        </div>
+                </div>
+            </div>
+            <div class="about-header">
+                <div>Gallery</div>
+            </div>
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(WeddingPhoto.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+
+                        </div>
+                        <div class="subtitle">
+                            <a href = about.html>Basic Information About Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(code.jfif)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+
+                        </div>
+                        <div class="subtitle">
+                            <a href = academics.html>Academics & Computer Science</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(guitar.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+
+                        </div>
+                        <div class="subtitle">
+                            <a href = hobbies.html>Hobbies & Personal Interests</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
+
