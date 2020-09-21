@@ -246,11 +246,13 @@ body {
 }
 .academics-container{
     height: 551px;
+    width: 100%;
     background-color: #222222;
 }
 
 .academics-border {
     height: 2px;
+    width: 100%;
     background-color: green;
 }
 
@@ -258,7 +260,7 @@ body {
     position: absolute;
     top: 35%;
     bottom: 50%;
-    left: 10%;
+    left: 14%;
     right: 70%;
 }
 
@@ -270,7 +272,7 @@ body {
 .renaissance-text {
     position: absolute;
     top: 45%;
-    left: 6%;
+    left: 10%;
     bottom: 45%;
     right: 70%;
     color: #8bc34a;
@@ -286,7 +288,7 @@ body {
 .renaissance-text-about{
     position: absolute;
     top: 55%;
-    left: 6%;
+    left: 10%;
     bottom: 45%;
     right: 70%;
     color: #8bc34a;
@@ -313,4 +315,71 @@ body {
     visibility: visible;
     opacity: 0.7; 
     filter: blur(0px);
+}
+
+.jupyter-logo img{
+    position: absolute;
+    top: 30%;
+    bottom: 50%;
+    left: 58%;
+
+}
+
+.jupyter-logo:hover img {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.jupyter-text {
+    position: absolute;
+    top: 45%;
+    left: 53%;
+    bottom: 45%;
+    color: #ff781f;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.25em;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.jupyter-text-about{
+    position: absolute;
+    top: 55%;
+    left: 53%;
+    bottom: 45%;
+    color: #ff781f;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.jupyter-logo:hover .jupyter-text {
+    width: 450px;
+    padding: 8px 15px; 
+    visibility: visible;
+    opacity: 0.7; 
+    filter: blur(0px);
+}
+
+.jupyter-logo:hover .jupyter-text-about {
+    width: 475px;
+    padding: 8px 15px; 
+    visibility: visible;
+    opacity: 0.7; 
+    filter: blur(0px);
+}
+
+.page-bottom-wrapper-hobbies {
+    height: 150px;
+    margin-top: -4px;
+    background-color: #222222;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
