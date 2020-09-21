@@ -18,7 +18,7 @@
                         <a href = "about.html">About</a>
                     </div>
                     <div class="nav-link-wrapper">
-                        <a href = "academics.html">Academics</a>
+                        <a href = "academics.html">Research</a>
                     </div>
                     <div class="nav-link-wrapper">
                         <a href = "hobbies.html">Interests</a>
@@ -31,7 +31,92 @@
                     </div>
                 </div>
             </div>
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                    <div class="about-img-background" style = "background-image:url(java.jpg)"></div>
+                    <div class="about-text-wrapper">
+                        <div class="logo-wrapper">
+
+                        </div>
+                        <div class="about-subtitle">
+                            Experienced in Java
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="about-img-background" style = "background-image:url(python.jpg)"></div>
+                    <div class="about-text-wrapper">
+                        <div class="logo-wrapper">
+
+                        </div>
+                        <div class="about-subtitle">
+                            Experienced in Python Programming
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="about-img-background" style = "background-image:url(html-css.jpg)"></div>
+                    <div class="about-text-wrapper">
+                        <div class="logo-wrapper">
+
+                        </div>
+                        <div class="about-subtitle">
+                            Familiar with HTML and CSS
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-header">
+                <div>Media & Resume</div>
+            </div>
+            <div class="profile-links">
+                <div class="link-images">
+                    <div class="link-image">
+                        <a target = "_blank" href = "https://github.com/shaheermaslam02">
+                            <img src = github.png width = 200>
+                        </a>
+                    </div>
+                    <div class="link-image">
+                        <a target = "_blank" href = "https://www.blogger.com/profile/00366387282803766501 ">
+                            <img src = blogger.png width = 200>
+                        </a>
+                    </div>
+                    <div class="link-image">
+                        <a target = "_blank" href = "https://www.linkedin.com/in/shaheer-aslam-5894381b4/">
+                            <img src = linkedin.png width = 200> 
+                        </a>
+                    </div>
+                    <div class="link-image">
+                        <a target = "_blank" href = "Resume.pdf">
+                            <img src = resumelogo.jpg width = 200> 
+                        </a>
+                    </div>
+                </div>
+            <div class="page-bottom-wrapper">
+                <div class="page-bottom-column">
+                    <div class="page-bottom-text-wrapper">
+                        <div class="page-bottom-text">
+                            <br>
+                            <br>
+                            Email: shaheermaslam02@gmail.com
+                            <br>
+                            <br>
+                            Location: Morristown, NJ
+                        </div>
+            </div>
         </div>
     </body>
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+    
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+    </script>
 </html>
 
