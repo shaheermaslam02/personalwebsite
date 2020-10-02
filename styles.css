@@ -46,11 +46,18 @@ body {
 }
 
 .background-video {
+    justify-content: center;
     text-align: center;
     width: 100%;
-    
 }
-.background-video div {
+
+.background-video .background-video-text-wrapper {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-left: 20%;
+}
+.background-video .background-video-text-wrapper div {
     position: absolute;
     top: 50%;
     left: 27%;
@@ -66,7 +73,7 @@ body {
     transition: visibility 0s, opacity 0.5s linear;
 }
 
-.background-video .summary-text {
+.background-video .background-video-text-wrapper .summary-text {
     position: absolute;
     top: 72%;
     left: 21.5%;
@@ -87,17 +94,17 @@ body {
     filter: brightness(10%);
 }
 
-.background-video:hover div{
+.background-video:hover .background-video-text-wrapper div{
     width: 580px;
-    padding: 8px 15px; 
+
     visibility: visible;
     opacity: 0.7; 
     filter: blur(0px);
    }
 
-.background-video:hover .summary-text{
+.background-video:hover .background-video-text-wrapper .summary-text{
     width: 700px;
-    padding: 8px 15px; 
+    text-align: center;
     visibility: visible;
     opacity: 0.7; 
     filter: blur(0px);
@@ -145,8 +152,8 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 27%;
+    padding-right: 20%;
 }
 
 .logo-wrapper img{
@@ -169,8 +176,8 @@ body {
     justify-content: center;
     height: 100%;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 24%;
+    padding-right: 20%;
 }
 .img-text-wrapper .subtitle a{
     transition: 1s;
@@ -245,7 +252,7 @@ body {
 
 }
 .academics-container{
-    height: 551px;
+    height: 770px;
     width: 100%;
     background-color: #222222;
 }
